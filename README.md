@@ -4,39 +4,14 @@ All the dotfiles to rule them all.
 
 ## Getting Started
 
-### Prerequisites
-
-- Linux (Ubuntu)
-
-  ```bash
-  # install stow
-  sudo apt install stow
-  ```
-
-- OSX
-  ```bash
-  # install homebrew
-  ## https://brew.sh/
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  ```
-
 ### Installation
 
-- Linux (Ubuntu)
-
-  ```bash
-  sudo apt install stow
-  cd ~/.dotfiles
-  bash dotfile_prep.sh
-  ```
-
-- OSX
-
-  ```bash
-  brew install stow
-  cd ~/.dotfiles
-  bash dotfile_prep.sh
-  ```
+```bash
+mkdir dotfiles
+cd ~/.dotfiles
+git clone https://github.com/csharpie/dotfiles.git
+bash install.sh
+```
 
 ## Attributions
 

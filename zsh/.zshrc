@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/home/linuxbrew/.linuxbrew/bin:$HOME/bin:$PATH"
 
 # Add .NET Core SDK tools
-export PATH="$PATH:/home/brad/.dotnet/tools"
+export PATH="$PATH:$HOME/.dotnet/tools"
 
 export DOTNET_ROOT="/usr/share/dotnet"
 
@@ -116,7 +116,7 @@ export TERM=xterm-256color
 eval "$(starship init zsh)"
 
 # Created by `pipx` on 2023-11-02 01:56:47
-export PATH="$PATH:/home/brad/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/share/dotnet"
 
 export PYENV_ROOT="$HOME/.pyenv"
@@ -127,12 +127,6 @@ eval "$(pyenv virtualenv-init -)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Clean and Green Philly
-export POSTGRES_PASSWORD="hellohellogoodbyegoodbye"
-export VACANT_LOTS_DB="postgresql://postgres:$POSTGRES_PASSWORD@localhost/vacantlotdb"
-export CLEAN_GREEN_GOOGLE_KEY="AIzaSyDrskmAhUFsnNe4_Fo6iU7_iHB48ghuNIYs"
-export GOOGLE_CLOUD_BUCKET_NAME="cleanandgreenphl-bs"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
