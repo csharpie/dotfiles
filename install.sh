@@ -15,7 +15,7 @@ esac
 if [ "$machine" == "Linux" ]; then
     echo 'Installing stow...'
     sudo apt install stow
-elif [ "$machine" == "Darwin" ]; then
+elif [ "$machine" == "Mac" ]; then
     echo 'Installing homebrew...'
     # install homebrew
     ## https://brew.sh/
@@ -26,12 +26,12 @@ elif [ "$machine" == "Darwin" ]; then
 fi
 
 echo 'Creating symlinks...'
-echo 'Creating symlink for .config/'
-stow .config/
 echo 'Creating symlink for bash'
-stow bash
+stow -vSt ~ bash
 echo 'Creating symlink for git'
-stow git
+stow -vSt ~ git
+echo 'Creating symlink for starship'
+stow -vSt ~ starship
 echo 'Creating symlink for zsh'
-stow zsh
+stow -vSt ~ zsh
 echo 'Completed symlinks'
